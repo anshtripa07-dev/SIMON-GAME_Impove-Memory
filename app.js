@@ -42,7 +42,7 @@ function check(idx){
         }
     }
     else{
-        document.querySelector("h2").innerText=`Game Over,Your score is ${level}...Press any key to restart`;
+        document.querySelector("h2").innerText=`Game Over,Your score is ${level}...Click on start to restart the game`;
         redflash();
         document.querySelector("body").classList.add("rfa")
         reset();
