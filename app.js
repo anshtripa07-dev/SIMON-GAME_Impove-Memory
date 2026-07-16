@@ -10,13 +10,14 @@ document.addEventListener("keypress",function(){
     document.querySelector("body").classList.remove("rfa");
     levelUp();
 });
-document.addEventListener("click",function(){
+document.querySelector("button").addEventListener("click",function(){
     if(game== false){
         game=true;
     }
     document.querySelector("body").classList.remove("rfa");
     levelUp();
-});
+    this.style.display="none";
+})
 function flash(btn){
     btn.classList.add("flash");
         setTimeout(function(){
@@ -45,6 +46,9 @@ function check(idx){
         redflash();
         document.querySelector("body").classList.add("rfa")
         reset();
+        document.querySelector("button").style.display="block";
+        document.querySelector("button").style.margin="0px auto";
+
     }
 }
 function buttonpress(){
