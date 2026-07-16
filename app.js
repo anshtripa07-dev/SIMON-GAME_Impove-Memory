@@ -10,6 +10,13 @@ document.addEventListener("keypress",function(){
     document.querySelector("body").classList.remove("rfa");
     levelUp();
 });
+document.addEventListener("click",function(){
+    if(game== false){
+        game=true;
+    }
+    document.querySelector("body").classList.remove("rfa");
+    levelUp();
+});
 function flash(btn){
     btn.classList.add("flash");
         setTimeout(function(){
